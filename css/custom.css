@@ -1,0 +1,83 @@
+/*
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F39C12;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before {
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav ul a:hover {
+  color: #F39C12;
+}
+
+.tabs .tab a:before, 
+.tabs .tab a:hover:before,
+nav ul a:before,
+nav ul a:hover:before
+#tooltip:before,
+#tooltip.tooltipped:hover:before {
+	all: unset;
+}
+*/
+/* Core */
+html {
+	background: url("../assets/background.png");
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;	
+}
+html, body {
+	height: 100%;
+	color: #999;
+}
+
+/* Content Blocks */
+.page-content {
+	background-color: rgba(0,0,0,0.5);
+}
+/* Icons */
+.icon-effect, .icon-class, .icon-role {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+/* Text Styling */
+.text-item, .text-mechanic, .text-role {
+	font-weight: bold;
+}
+.text-timer {
+	color: #bbb;
+    font-weight: bold;
+}
+.text-info {
+	color: #F39C12;
+}
+.text-muted {
+	color: #999;
+}
+/* Links */
+a {
+	position: relative;
+	text-decoration: none;
+	color: #F39C12;
+}
+/* Tooltips */
+.material-tooltip {
+	background-color: rgba(0,0,0,0.80);
+}
