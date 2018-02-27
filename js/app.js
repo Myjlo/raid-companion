@@ -3,18 +3,17 @@
 //=========================//
 
 $(document).ready(function(){
-//=========================//
-//       INITIALIZE        //
-//=========================//
-  $('.tooltip').tooltip({position: 'top'});
-  $('.tabs').tabs();
-  $('.sidenav').sidenav();
-  $('.dropdown-trigger').dropdown({constrainWidth: false, coverTrigger: false});
 
 //=========================//
 //         PAGES           //
 //=========================//
-
+  $( "#Home" ).load( "pages/Home.html");
+  $( "#Sandbox" ).load( "pages/Sandbox.html");
+  $( "#SpiritVale" ).load( "pages/Spirit_Vale.html");
+  $( "#SalvationPass" ).load( "pages/Salvation_Pass.html");
+  $( "#StrongholdOfTheFaithful" ).load( "pages/Stronghold_Of_The_Faithful.html");
+  $( "#BastionOfThePenitent" ).load( "pages/Bastion_Of_The_Penitent.html");
+  $( "#HallOfChains" ).load( "pages/Hall_Of_Chains.html");
 //=========================//
 //        TOOLTIPS         //
 //=========================//
@@ -45,12 +44,12 @@ $(document).ready(function(){
       $(this).attr('data-tooltip', '<span class="text-Error">ERR: Invalid  Data ("' + type + ' : ' + name + '")</span>');  
     };  
   });
-    $( "#Home" ).load( "pages/Home.html");
-  $( "#Sandbox" ).load( "pages/Sandbox.html");
-  $( "#SpiritVale" ).load( "pages/Spirit_Vale.html");
-  $( "#SalvationPass" ).load( "pages/Salvation_Pass.html");
-  $( "#StrongholdOfTheFaithful" ).load( "pages/Stronghold_Of_The_Faithful.html");
-  $( "#BastionOfThePenitent" ).load( "pages/Bastion_Of_The_Penitent.html");
-  $( "#HallOfChains" ).load( "pages/Hall_Of_Chains.html");
+//=========================//
+//       INITIALIZE        //
+//=========================//
+  $('.tooltip').tooltip({position: 'top'});
+  $('.tabs').tabs();
+  $('.sidenav').sidenav();
+  $('.dropdown-trigger').dropdown({constrainWidth: false, coverTrigger: false});
 
 });
