@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html ng-app="raidCompanionApp">
+  <html>
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -42,11 +42,11 @@
           <li><a href="#!">Sandbox</a></li>
           <li><a class="dropdown-trigger" href="#!" data-target="Raids-Dropdown-Side">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
           <ul id="Raids-Dropdown-Side" class="dropdown-content">
-            <li><a href="#!">Spirit Vale</a></li>
-            <li><a href="#!">Salvation Pass</a></li>
-            <li><a href="#!">Stronghold of the Faithful</a></li>
-            <li><a href="#!">Bastion of the Penitent</a></li>
-            <li><a href="#!">Hall of Chains</a></li>
+            <li><a href="#SpiritVale">Spirit Vale</a></li>
+            <li><a href="#SalvationPass">Salvation Pass</a></li>
+            <li><a href="#StrongholdOfTheFaithful">Stronghold of the Faithful</a></li>
+            <li><a href="#BastionOfThePenitent">Bastion of the Penitent</a></li>
+            <li><a href="#HallOfChains">Hall of Chains</a></li>
           </ul>
         </ul>
       </header>
@@ -54,25 +54,13 @@
       <!--Content-->
       <main class="container">
         <div class="page-Content">
-
-        <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
-          <li class="tab"><a class="active" href="#ValeGuardian">Test 1</a></li>
-          <li class="tab"><a href="#test2">Test 2</a></li>
-          <li class="tab"><a href="#test3">Test 3</a></li>
-          <li class="tab"><a href="#test4">Test 4</a></li>
-        </ul>
-        
-        <div id="ValeGuardian" class="col s12">
-          <span class="effect-Tooltip" data-type="Boon" data-name="Quickness"></span>
+          <template id="Home"></template>
+          <template id="SpiritVale"></template>
+          <template id="SalvationPass"></template>
+          <template id="StrongholdOfTheFaithful"></template>
+          <template id="BastionOfThePenitent"></template>
+          <template id="HallOfChains"></template>
         </div>
-        <div id="test2" class="col s12">
-          <span class="effect-Tooltip" data-type="Effect" data-name="Stun"></span>
-        </div>
-        <div id="test3" class="col s12">
-          <span class="effect-Tooltip" data-type="Condition" data-name="Torment"></span>
-        </div>
-        <div id="test4" class="col s12"><p>Test 4</p></div>
-      </div>
       </main>
       <!--Footer-->
       <footer>
@@ -81,7 +69,7 @@
       <!--Import Scripts-->
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
-      <script type="text/javascript" src="js/tooltips.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
       <!--Initialize Components-->
     </body>
   </html>
