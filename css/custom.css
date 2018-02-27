@@ -49,7 +49,7 @@ html, body {
 
 /* Navigation */
 .nav, .tabs {
-	background-color: #272727;
+	background-color: #272727 !important;
 }
 .tabs {
 	position: sticky;
