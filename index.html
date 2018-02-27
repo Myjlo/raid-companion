@@ -1,63 +1,87 @@
 <!DOCTYPE html>
-  <html>
+  <html ng-app="raidCompanionApp">
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"/>
-      <link type="text/css" rel="stylesheet" href="css/normalize.css">
       <link type="text/css" rel="stylesheet" href="css/custom.css">
 
       <!--Notify: optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     </head>
 
     <body>
       <!--Header/Nav-->
-      <header class="navbar-fixed">
-        <ul id="RaidsDropdown" class="dropdown-content">
-          <li><a href="#!">one</a></li>
-          <li><a href="#!">two</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">three</a></li>
-        </ul>
-        <nav class="nav">
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo"></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="dropdown-trigger" href="#RaidsDropdown"></a></li>
-            </ul>
-          </div>
-        </nav>
-        <ul class="sidenav" id="mobile-demo">
-          
+      <header>
+        <!--MainNav-->
+        <div class="navbar-fixed">
+          <nav>
+            <div class="nav nav-wrapper">
+              <a href="#!" class="brand-logo">Logo</a>
+              <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Sandbox</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="Raids-Dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>
+            </div>
+          </nav>
+        <!--Raids Dropdown-->
+          <ul id="Raids-Dropdown" class="dropdown-content">
+            <li><a href="#!">Spirit Vale</a></li>
+            <li><a href="#!">Salvation Pass</a></li>
+            <li><a href="#!">Stronghold of the Faithful</a></li>
+            <li><a href="#!">Bastion of the Penitent</a></li>
+            <li><a href="#!">Hall of Chains</a></li>
+          </ul>
+        </div>
+        <!--SideNav-->
+        <ul class="sidenav" id="side-nav">
+          <li><a href="#!">Home</a></li>
+          <li><a href="#!">Sandbox</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="Raids-Dropdown-Side">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id="Raids-Dropdown-Side" class="dropdown-content">
+            <li><a href="#!">Spirit Vale</a></li>
+            <li><a href="#!">Salvation Pass</a></li>
+            <li><a href="#!">Stronghold of the Faithful</a></li>
+            <li><a href="#!">Bastion of the Penitent</a></li>
+            <li><a href="#!">Hall of Chains</a></li>
+          </ul>
         </ul>
       </header>
 
       <!--Content-->
-      <main class="container page-content">
-        <br><br><br>
-        Main
-<div id="content"></div>
+      <main class="container">
+        <div class="page-Content">
 
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#content").load("tooltips.html");
-});
-</script>
+        <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+          <li class="tab"><a class="active" href="#ValeGuardian">Test 1</a></li>
+          <li class="tab"><a href="#test2">Test 2</a></li>
+          <li class="tab"><a href="#test3"> </a></li>
+          <li class="tab"><a href="#test4">Test 4</a></li>
+        </ul>
+        
+        <div id="ValeGuardian" class="col s12">
+          <span class="effect-Tooltip" data-type="Boon" data-name="Quickness"></span>
+        </div>
+        <div id="test2" class="col s12">
+          <span class="effect-Tooltip" data-type="Effect" data-name="Stun"></span>
+        </div>
+        <div id="test3" class="col s12">
+          <span class="effect-Tooltip" data-type="Condition" data-name="Torment"></span>
+        </div>
+        <div id="test4" class="col s12"><p>Test 4</p></div>
+      </div>
       </main>
       <!--Footer-->
       <footer>
 
       </footer>
-
-      <!--Import jQuery & others before materialize.js-->
-      
+      <!--Import Scripts-->
+      <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript" src="js/tooltips.js"></script>
       <!--Initialize Components-->
-      <script type="text/javascript" src="js/initialize.js"></script>
     </body>
   </html>

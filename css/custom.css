@@ -47,30 +47,52 @@ html, body {
 	color: #999;
 }
 
-/* Content Blocks */
-.page-content {
+/* Navigation */
+.nav, .tabs {
+	background-color: #272727;
+}
+.tabs {
+	position: sticky;
+	top: 64px;
+}
+
+
+/* Content */
+.page-Content {
 	background-color: rgba(0,0,0,0.5);
+	min-height: 200px;
 }
 /* Icons */
-.icon-effect, .icon-class, .icon-role {
+.icon-Effect, .icon-Profession, .icon-Role {
 	width: 20px;
 	height: 20px;
 	vertical-align: middle;
 }
 /* Text Styling */
-.text-item, .text-mechanic, .text-role {
+.text-Item, .text-Mechanic, .text-Role {
 	font-weight: bold;
 }
-.text-timer {
+.text-Timer {
 	color: #bbb;
     font-weight: bold;
 }
-.text-info {
-	color: #F39C12;
-}
-.text-muted {
+.text-Muted {
 	color: #999;
 }
+/* Colored Text Styling */
+.text-Boon, .text-Info {
+	color: #F39C12;
+}
+.text-Effect {
+	color: #ddd;
+}
+.text-Condition {
+	color: #d8543a;
+}
+.text-Error {
+	color: #ff0000;
+}
+
 /* Links */
 a {
 	position: relative;
@@ -80,4 +102,8 @@ a {
 /* Tooltips */
 .material-tooltip {
 	background-color: rgba(0,0,0,0.80);
+	text-align: left;
+	padding: 3px;
+	font-size: 14px;
+	min-height: 27px;
 }
