@@ -5,6 +5,16 @@
 $(document).ready(function(){
 
 //=========================//
+//         PAGES           //
+//=========================//
+  $( "#Home" ).load( "pages/Home.html");
+  $( "#Sandbox" ).load( "pages/Sandbox.html");
+  $( "#SpiritVale" ).load( "pages/Spirit_Vale.html");
+  $( "#SalvationPass" ).load( "pages/Salvation_Pass.html");
+  $( "#StrongholdOfTheFaithful" ).load( "pages/Stronghold_Of_The_Faithful.html");
+  $( "#BastionOfThePenitent" ).load( "pages/Bastion_Of_The_Penitent.html");
+  $( "#HallOfChains" ).load( "pages/Hall_Of_Chains.html");
+//=========================//
 //        TOOLTIPS         //
 //=========================//
 //Arrays for Data Check
@@ -37,16 +47,6 @@ $(document).ready(function(){
 //=========================//
 //       INITIALIZE        //
 //=========================//
-//=========================//
-//         PAGES           //
-//=========================//
-  $( "#Home" ).load( "pages/Home.html");
-  $( "#Sandbox" ).load( "pages/Sandbox.html");
-  $( "#SpiritVale" ).load( "pages/Spirit_Vale.html");
-  $( "#SalvationPass" ).load( "pages/Salvation_Pass.html");
-  $( "#StrongholdOfTheFaithful" ).load( "pages/Stronghold_Of_The_Faithful.html");
-  $( "#BastionOfThePenitent" ).load( "pages/Bastion_Of_The_Penitent.html");
-  $( "#HallOfChains" ).load( "pages/Hall_Of_Chains.html");
   $('.tooltip').tooltip({position: 'top'});
   $('.tabs').tabs();
   $('.sidenav').sidenav();
