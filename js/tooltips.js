@@ -29,7 +29,7 @@ $(document).ready(function(){
     };  
   });
 //Initialize Materialize Components
-  $( "#ValeGuardian" ).load( "pages/test.html");
+  $( "#ValeGuardian" ).load( "pages/ValeGuardian.html");
   $('.tooltip').tooltip({position: 'top'});
   $('.tabs').tabs();
   $('.sidenav').sidenav();
