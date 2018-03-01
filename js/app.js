@@ -9,6 +9,9 @@ $(document).ready(function(){
 
 function Tabcontent() {
   $('.menu .item').tab({
+    onVisible: Tooltips(),
+    history: true,
+    historyType: 'hash',
     apiSettings: {
       loadingDuration : 1000,
       url: 'modules/{$tab}.html'
