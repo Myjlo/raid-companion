@@ -9,10 +9,11 @@ $(document).ready(function(){
 
 function Tabcontent() {
   $('.menu .item').tab({
-    path: './modules/',
+    history: true,
+    historyType: 'hash',
     apiSettings: {
-      url: '{tab}.html'
-    }
+      url: './modules/{$tab}.html'
+    },
   });
 }
 //=========================//
