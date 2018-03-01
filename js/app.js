@@ -9,7 +9,6 @@ $(document).ready(function(){
 
 function Tabcontent() {
   $('.menu .item').tab({
-    onVisible: Tooltips(),
     history: true,
     historyType: 'hash',
     apiSettings: {
@@ -17,6 +16,7 @@ function Tabcontent() {
       url: 'modules/{$tab}.html'
     }
   });
+  $('.menu .item').tab({'onVisible':function(){Tooltips();}})
 }
 
 //=========================//
