@@ -10,6 +10,7 @@ $(document).ready(function(){
 function Tabcontent() {
   $('.menu .item').tab({
     history: true,
+    cache: false,
     historyType: 'hash',
     alwaysRefresh: true,
     apiSettings: {
