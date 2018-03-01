@@ -5,11 +5,15 @@ $(document).ready(function(){
   $('.menu .item').tab();
   $('.ui.dropdown').dropdown();
 
-
+//=========================//
+//   LOAD ENCOUNTER DATA   //
+//=========================//
   $('.tab-content').each(function() {
     var name = $(this).attr('data-tab') + '.html';
+    $(this).addClass('loading');
     $(this).load('./modules/' + name, function() {
       console.log('Load  of ' + name + ' was performed.');
+      $(this).removeClass('loading')
       Tooltips();
     });
   });
