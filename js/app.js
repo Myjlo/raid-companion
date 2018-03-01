@@ -5,13 +5,12 @@ $(document).ready(function(){
   $('.menu .item').tab();
   $('.ui.dropdown').dropdown();
 
-//=========================//
-//   LOAD ENCOUNTER DATA   //
-//=========================//
-  $('.tab-content').each(function() {
+
+
+
+  $('.tab-content.active').each(function() {
     var name = $(this).attr('data-tab') + '.html';
     $(this).addClass('loading');
-    $(this).delay(3000);
     $(this).load('./modules/' + name, function() {
       console.log('Load  of ' + name + ' was performed.');
       $(this).removeClass('loading')
@@ -64,7 +63,6 @@ function Tooltips() {
     var profession = $(this).attr('data-profession').replace(/\b\w/g, l => l.toUpperCase());
     var role = $(this).attr('data-role').replace(/\b\w/g, l => l.toUpperCase());
 
-    console.log(role)
     if ($.inArray(profession, professions) >-1) {
       $(this).html('<img class="image-effect" src="./assets/Tooltips/Professions/' + profession + '.png"></img>');
       $(this).popup({
@@ -85,6 +83,9 @@ function Tooltips() {
           transition: 'fade up'
         });     
     }; 
-
   });
 };
+
+//=========================//
+//   LOAD ENCOUNTER DATA   //
+//=========================//
