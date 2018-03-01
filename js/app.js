@@ -13,6 +13,7 @@ $(document).ready(function(){
       Tooltips();
     });
   });
+});
 //=========================//
 //   TOOLTIP DATA ARRAYS   //
 //=========================//
@@ -81,4 +82,4 @@ function Tooltips() {
     }; 
 
   });
-});
+};
