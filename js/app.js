@@ -10,6 +10,8 @@ $(document).ready(function(){
 function Tabcontent() {
   $('.menu .item').tab({
     onVisible: function(Tooltips();),
+    cache: false,
+    alwaysRefresh: true,
     history: true,
     historyType: 'hash',
     apiSettings: {
