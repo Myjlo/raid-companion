@@ -8,7 +8,8 @@ $(document).ready(function(){
 
 
 function Tabcontent() {
-  $('.menu .item').tab({'onVisible':function(){Tooltips();},
+  $('.menu .item').tab({
+    onVisible: function(Tooltips();),
     history: true,
     historyType: 'hash',
     apiSettings: {
