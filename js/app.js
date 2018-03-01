@@ -6,7 +6,9 @@ $(document).ready(function(){
   $('.ui.dropdown').dropdown();
 });
 
-
+//=========================//
+//       TAB CONTENT       //
+//=========================//
 function Tabcontent() {
   $('.menu .item').tab({
     cache: false,
@@ -46,7 +48,7 @@ function Tooltips() {
           html      : '<img class="image-effect" src="./assets/Tooltips/' + type + 's/' + name + '.png"></img><span class="text-' + type + '"> ' + name.replace(/_/g, ' ') + '</span>',
           variation : 'inverted basic',
           position  : 'top center',
-          transition: 'fade up'
+          transition: 'scale'
         });
     } else {
       $(this).html('<img class="image-effect" src="./assets/Tooltips/Invalid.png"></img>');
@@ -54,7 +56,7 @@ function Tooltips() {
           html      : '<img class="image-effect" src="./assets/Tooltips/Invalid.png"></img><span class="text-Error">ERR: Invalid  Data</span>',
           variation : 'inverted basic',
           position  : 'top center',
-          transition: 'fade up'
+          transition: 'scale'
         });     
     };  
   });
@@ -71,7 +73,7 @@ function Tooltips() {
           html      : '<img class="image-effect" src="./assets/Tooltips/Professions/' + profession + '.png"></img><span class="text-' + profession + '"> ' + profession + '</span><sub> (' + role + ') </sub>',
           variation : 'inverted basic',
           position  : 'top center',
-          transition: 'fade up'
+          transition: 'scale'
         });
       if ($(this).attr('data-include-name') == 'true'){
         $(this).append(' <a href="https://wiki.guildwars2.com/wiki/' + profession + '" class="text-' + profession + '">' + profession + '</a>')
@@ -82,7 +84,7 @@ function Tooltips() {
           html      : '<img class="image-effect" src="./assets/Tooltips/Invalid.png"></img><span class="text-Error">ERR: Invalid  Data</span>',
           variation : 'inverted basic',
           position  : 'top center',
-          transition: 'fade up'
+          transition: 'scale'
         });     
     }; 
   });
