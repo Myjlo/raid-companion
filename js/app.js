@@ -9,14 +9,11 @@ $(document).ready(function(){
 
 function Tabcontent() {
   $('.menu .item').tab({
-<<<<<<< HEAD
     history: true,
     cache: true,
     historyType: 'hash',
-    cachetype: 'html',
-=======
+    cachetype: 'DOM',
     alwaysRefresh: true,
->>>>>>> 45a9b91bce3c8389099566f9fffbe54c2b64700b
     apiSettings: {
       loadingDuration : 1000,
       url: 'modules/{$tab}.html'
