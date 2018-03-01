@@ -11,7 +11,7 @@ $(document).ready(function(){
   $('.tab-content').each(function() {
     var name = $(this).attr('data-tab') + '.html';
     $(this).addClass('loading');
-    $(this).delay(300);
+    $(this).delay(3000);
     $(this).load('./modules/' + name, function() {
       console.log('Load  of ' + name + ' was performed.');
       $(this).removeClass('loading')
