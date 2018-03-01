@@ -9,8 +9,9 @@ $(document).ready(function(){
 
 function Tabcontent() {
   $('.menu .item').tab({
+    path: './modules/',
     apiSettings: {
-      url: './modules/{tab}.html'
+      url: '{tab}.html'
     }
   });
 }
