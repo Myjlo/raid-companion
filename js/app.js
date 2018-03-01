@@ -16,7 +16,6 @@ function Tabcontent() {
       url: 'modules/{$tab}.html'
     }
   });
-  $('.menu .item').tab({'onVisible':function(){Tooltips();}})
 }
 
 //=========================//
