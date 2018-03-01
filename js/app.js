@@ -2,22 +2,19 @@
 
 $(document).ready(function(){
   Tooltips();
-  $('.menu .item').tab();
+  Tabcontent();
   $('.ui.dropdown').dropdown();
-
-
-
-
-  $('.tab-content.active').each(function() {
-    var name = $(this).attr('data-tab') + '.html';
-    $(this).addClass('loading');
-    $(this).load('./modules/' + name, function() {
-      console.log('Load  of ' + name + ' was performed.');
-      $(this).removeClass('loading')
-      Tooltips();
-    });
-  });
 });
+
+
+function Tabcontent() {
+  $('.menu .item').tab({
+    auto: true,
+    apiSettings: {
+      url: './modules/{tab}.html'
+    }
+  });
+}
 //=========================//
 //   TOOLTIP DATA ARRAYS   //
 //=========================//
