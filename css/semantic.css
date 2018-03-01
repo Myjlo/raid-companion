@@ -36879,7 +36879,7 @@ body.pushable > .pusher {
 .ui.tab.loading:before,
 .ui.tab.loading.segment:before {
   position: absolute;
-  content: '';
+  content: 'Loading...';
   top: 100px;
   left: 50%;
   margin: -1.25em 0em 0em -1.25em;

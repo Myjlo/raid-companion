@@ -20,13 +20,74 @@ body {
 .ui.menu > .item:last-child {
   border-radius: 0px;
 }
+.ui.inverted.menu .item:before,
+.ui.menu .item:before {
+  background: none;
+}
+
+.ui.secondary.pointing.menu {
+  background-color: #1B1C1D;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.ui.secondary.pointing.menu .item {
+  font-weight: normal;
+  color: rgba(255,255,255,0.9);
+}
+.ui.secondary.pointing.menu .active.item {
+  color: #F39C12;
+  border-color: #F39C12;
+  font-weight: normal;
+}
+
+.ui.secondary.pointing.menu .active.item:hover {
+  color: #F39C12;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #F39C12;
+  font-weight: normal;
+}
+
+.ui.secondary.pointing.menu a.item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #F39C12;
+  color: #fff;
+  font-weight: normal;
+}
 
 /* ======================== */
 /* Content Block Styling    */
 /* ======================== */
 .page-content {
-  background: rgba(0,0,0,0.7);
-  
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: inherit;
+    position: fixed;
+  }
+@media only screen and (max-width: 767px) {
+  .page-content {
+    height: 100%;
+    width: inherit;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-content {
+    height: 100%;
+    width: inherit;
+  }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .page-content {
+    height: 100%;
+    width: inherit;
+  }
+
+}
+@media only screen and (min-width: 1200px) {
+  .page-content {
+    height: 100%;
+    width: inherit;
+  }
 }
 .ui.segment.transparant {
 	background: none;
@@ -35,6 +96,20 @@ body {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
+}
+.ui.tab.loading:before, 
+.ui.tab.loading.segment:before {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  left: 0;
+  border: none;
+  top: 135px;
+  color: #999;
+}
+.ui.tab.loading:after, 
+.ui.tab.loading.segment:after {
+  border-color: #F39C12 transparent transparent;
 }
 /* ======================== */
 /* Link Styling             */

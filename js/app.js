@@ -12,8 +12,9 @@ function Tabcontent() {
     history: true,
     historyType: 'hash',
     apiSettings: {
-      url: './modules/{$tab}.html'
-    },
+      loadingDuration : 1000,
+      url: 'modules/{$tab}.html'
+    }
   });
 }
 //=========================//
