@@ -11,6 +11,7 @@ function Tabcontent() {
   $('.menu .item').tab({
     history: true,
     historyType: 'hash',
+    alwaysRefresh: true,
     apiSettings: {
       loadingDuration : 1000,
       url: 'modules/{$tab}.html'
@@ -24,7 +25,7 @@ function Tabcontent() {
   var effects = ['Barrier','Daze','Float','Knockback','Knockdown','Launch','Pull','Sink','Stun','Nourishment','Enhancement','Invulnerability','Revealed','Stealth','Superspeed'];
   var conditions = ['Bleeding','Blind','Burning','Chilled','Confusion','Crippled','Fear','Immobile','Poison','Slow','Taunt','Torment','Vulnerability','Weakness'];
   
-  var professions = ['Warrior','Berserker','Spellbreaker','Guardian','Dragonhunter','Firebrand','Revenant','Herald','Renegade','Ranger','Druid','Soulbeast','Engineer','Scrapper','Holosmith','Thief','Daredevil','Deadeye','Elementalist','Tempest','Weaver','Mesmer','Chronomancer','Mirage','Necromancer','Reaper','Scourge'];
+  var professions = ['Warrior','Berserker','Spellbreaker','Guardian','Dragonhunter','Firebrand','Revenant','Herald','Renegade','Ranger','Druid','Soulbeast','Engineer','Scrapper','Holosmith','Thief','Daredevil','Deadeye','Elementalist','Tempest','Weaver','Mesmer','Chronomancer','Mirage','Necromancer','Reaper','Scourge','Any'];
 
 //=========================//
 //     EFFECT TOOLTIPS     //
