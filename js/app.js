@@ -20,19 +20,20 @@ function Tabcontent() {
     }
   });
 }
+
 //=========================//
-//   TOOLTIP DATA ARRAYS   //
+//        TOOLTIPS         //
 //=========================//
+function Tooltips() {
   var boons = ['Aegis','Alacrity','Fury','Might','Protection','Quickness','Regeneration','Resistance','Retaliation','Stability','Swiftness','Vigor'];
   var effects = ['Barrier','Daze','Float','Knockback','Knockdown','Launch','Pull','Sink','Stun','Nourishment','Enhancement','Invulnerability','Revealed','Stealth','Superspeed'];
   var conditions = ['Bleeding','Blind','Burning','Chilled','Confusion','Crippled','Fear','Immobile','Poison','Slow','Taunt','Torment','Vulnerability','Weakness'];
   
   var professions = ['Warrior','Berserker','Spellbreaker','Guardian','Dragonhunter','Firebrand','Revenant','Herald','Renegade','Ranger','Druid','Soulbeast','Engineer','Scrapper','Holosmith','Thief','Daredevil','Deadeye','Elementalist','Tempest','Weaver','Mesmer','Chronomancer','Mirage','Necromancer','Reaper','Scourge','Any'];
 
-//=========================//
-//     EFFECT TOOLTIPS     //
-//=========================//
-function Tooltips() {
+  //=========================//
+  //     EFFECT TOOLTIPS     //
+  //=========================//
   $('.tooltip-effect').each(function() {
     var name = $(this).attr('data-name').replace(/\b\w/g, l => l.toUpperCase());
     var type = $(this).attr('data-type').replace(/\b\w/g, l => l.toUpperCase());
@@ -58,9 +59,9 @@ function Tooltips() {
         });     
     };  
   });
-//=========================//
-//   PROFESSION TOOLTIPS   //
-//=========================//
+  //=========================//
+  //   PROFESSION TOOLTIPS   //
+  //=========================//
   $('.tooltip-profession').each(function() {
     var profession = $(this).attr('data-profession').replace(/\b\w/g, l => l.toUpperCase());
     var role = $(this).attr('data-role').replace(/\b\w/g, l => l.toUpperCase());
@@ -87,7 +88,3 @@ function Tooltips() {
     }; 
   });
 };
-
-//=========================//
-//   LOAD ENCOUNTER DATA   //
-//=========================//
