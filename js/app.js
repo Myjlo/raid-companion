@@ -12,9 +12,9 @@ function Tabcontent() {
     auto: true,
     path: './modules/',
     apiSettings: {
-
       url: '{tab}'
     }
+    Tooltips();
   });
 }
 //=========================//
