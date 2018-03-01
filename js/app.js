@@ -9,12 +9,10 @@ $(document).ready(function(){
 
 function Tabcontent() {
   $('.menu .item').tab({
-    auto: true,
     path: './modules/',
     apiSettings: {
       url: '{tab}'
     }
-    Tooltips();
   });
 }
 //=========================//
