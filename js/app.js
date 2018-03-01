@@ -1,6 +1,7 @@
 
 
 $(document).ready(function(){
+  Tooltips();
   $('.menu .item').tab();
   $('.ui.dropdown').dropdown();
 
@@ -9,6 +10,7 @@ $(document).ready(function(){
     var name = $(this).attr('data-tab') + '.html';
     $(this).load('./modules/' + name, function() {
       console.log('Load  of ' + name + ' was performed.');
+      Tooltips();
     });
   });
 //=========================//
@@ -23,6 +25,7 @@ $(document).ready(function(){
 //=========================//
 //     EFFECT TOOLTIPS     //
 //=========================//
+function Tooltips() {
   $('.tooltip-effect').each(function() {
     var name = $(this).attr('data-name').replace(/\b\w/g, l => l.toUpperCase());
     var type = $(this).attr('data-type').replace(/\b\w/g, l => l.toUpperCase());
