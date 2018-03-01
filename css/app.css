@@ -203,11 +203,14 @@ a.text-Any:before {background-color: #ddd;}
 /* ======================== */
 /* Effect Text Styling      */
 /* ======================== */
+.text-Boon {
+  color: #e5b97a;
+}
 .text-Effect {
 	color: #ddd;
 }
 .text-Condition {
-	color: #d8543a;
+	color: #ea3131;
 }
 .text-Error {
 	color: #ff0000;
