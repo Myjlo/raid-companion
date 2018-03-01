@@ -1,28 +1,32 @@
 /* Core HTML */
-:root {
-	--warrior-color
-}
-
-
-
-
-body {
-  background: url(../assets/background.png);
+html {
+  background: url(../assets/background.png) !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #eee;
+}
+body {
+  background: none;
+  color: #fff;
+}
+/* ======================== */
+/* Navigation Styling       */
+/* ======================== */
+.ui.menu,
+.ui.menu > .item:first-child,
+.ui.menu > .item:last-child {
+  border-radius: 0px;
 }
 
 /* ======================== */
 /* Content Block Styling    */
 /* ======================== */
-.ui.container {
-	background: rgba(0,0,0,0.7);
-	padding: 5px;
+.page-content {
+  background: rgba(0,0,0,0.7);
+  
 }
 .ui.segment.transparant {
 	background: none;

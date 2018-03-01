@@ -1,17 +1,24 @@
 
 
-
 $(document).ready(function(){
+  $('.menu .item').tab();
+  $('.ui.dropdown').dropdown();
 
+
+  $('.tab-content').each(function() {
+    var name = $(this).attr('data-tab') + '.html';
+    $(this).load('./modules/' + name, function() {
+      console.log('Load  of ' + name + ' was performed.');
+    });
+  });
 //=========================//
 //   TOOLTIP DATA ARRAYS   //
 //=========================//
   var boons = ['Aegis','Alacrity','Fury','Might','Protection','Quickness','Regeneration','Resistance','Retaliation','Stability','Swiftness','Vigor'];
   var effects = ['Barrier','Daze','Float','Knockback','Knockdown','Launch','Pull','Sink','Stun','Nourishment','Enhancement','Invulnerability','Revealed','Stealth','Superspeed'];
   var conditions = ['Bleeding','Blind','Burning','Chilled','Confusion','Crippled','Fear','Immobile','Poison','Slow','Taunt','Torment','Vulnerability','Weakness'];
-  var buffs = ['Banner_Of_Strength'];
   
-  var professions = ['Warrior','Berserker','Spellbreaker','Guardian','Dragonhunter','Firebrand','Revenant','Herald','Renegade','Ranger','Druid','Engineer','Scrapper','Holosmith','Thief','Daredevil','Deadeye','Elementalist','Tempest','Weaver','Mesmer','Chronomancer','Mirage','Necromancer','Reaper','Scourge'];
+  var professions = ['Warrior','Berserker','Spellbreaker','Guardian','Dragonhunter','Firebrand','Revenant','Herald','Renegade','Ranger','Druid','Soulbeast','Engineer','Scrapper','Holosmith','Thief','Daredevil','Deadeye','Elementalist','Tempest','Weaver','Mesmer','Chronomancer','Mirage','Necromancer','Reaper','Scourge'];
 
 //=========================//
 //     EFFECT TOOLTIPS     //
@@ -58,9 +65,8 @@ $(document).ready(function(){
           transition: 'fade up'
         });
       if ($(this).attr('data-include-name') == 'true'){
-        $(this).append('<a href="https://wiki.guildwars2.com/wiki/' + profession + '" class="text-' + profession + '">' + profession + '</a>')
-      }
-
+        $(this).append(' <a href="https://wiki.guildwars2.com/wiki/' + profession + '" class="text-' + profession + '">' + profession + '</a>')
+      };
     } else {
       $(this).html('<img class="image-effect" src="./assets/Tooltips/Invalid.png"></img>');
       $(this).popup({
@@ -71,5 +77,5 @@ $(document).ready(function(){
         });     
     }; 
 
-});
+  });
 });

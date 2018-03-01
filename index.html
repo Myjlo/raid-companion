@@ -16,37 +16,54 @@
   </head>
 <!-- Document Content -->
 	<body>
-		<div class="ui container ">
-     	<h3 class="ui horizontal divider header">
-			  Vale Guardian
-			</h3>
-	    <div class="ui two column divided grid">
-			  <div class="stretched row">
-			    <div class="column twelve wide">
-			      <div class="ui segment transparant">
-			        <span class="tooltip-profession" data-profession="Spellbreaker" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Dragonhunter" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Revenant" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Druid" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Thief" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Holosmith" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Tempest" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Mesmer" data-role="condi" data-include-name="true"></span><br>
-			        <span class="tooltip-profession" data-profession="Scourge" data-role="condi" data-include-name="true"></span>
-			      </div>
-			      <div class="ui segment transparant">
-			        <a href="#">Link Test</a>
-			      </div>
-			    </div>
-			    <div class="column four wide">
-			      <div class="ui segment inverted">
-			        1
-			      </div>
-			    </div>
-			  </div>
+
+		<header>
+			<div class="ui stackable menu inverted">
+			  <div class="ui container">
+				  <a class="item">Home</a>
+				  <a class="item">Sandbox</a>
+				  <div class="ui dropdown item right">
+				    Raids
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+				      <a class="item">Spirit Vale</a>
+				      <a class="item">Salvation Pass</a>
+				      <a class="item">Stronghold of the Faithful</a>
+				      <a class="item">Bastion of the Penitent</a>
+				      <a class="item">Hall of Chains</a>
+				    </div>
+				  </div>
+				</div>
 			</div>
-			<h3 class="ui horizontal divider header">
-			  Mechanics
-			</h3>
+		</header>
+		
+		<main class="ui container">
+			<div class="ui pointing secondary menu">
+			  <a class="item active" data-tab="Vale_Guardian">Vale Guardian</a>
+			  <a class="item" data-tab="Spirit_Woods">Spirit Woods</a>
+			  <a class="item" data-tab="Gorseval">Gorseval</a>
+			  <a class="item" data-tab="Sabetha">Sabetha</a>
+			</div>
+
+
+			<div class="page-content">
+				<div class="ui tab tab-content active" data-tab="Vale_Guardian">
+
+				</div>
+				<div class="ui tab" data-tab="Spirit_Woods">
+					Text2
+				</div>
+				<div class="ui tab" data-tab="Gorseval">
+					Text3
+				</div>
+				<div class="ui tab" data-tab="Sabetha">
+					Text4
+				</div>
+			</div>
+			
+		</main>
+		<footer>
+			
+		</footer>
 	</body>
 </html>
