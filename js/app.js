@@ -10,8 +10,10 @@ $(document).ready(function(){
 function Tabcontent() {
   $('.menu .item').tab({
     auto: true,
+    path: './modules/',
     apiSettings: {
-      url: './modules/{tab}.html'
+
+      url: '{tab}'
     }
   });
 }
