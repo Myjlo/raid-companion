@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 
 function Tabcontent() {
-  $('.menu .item').tab({'onVisible': console.log('Refreshed Tooltips')}).tab({
+  $('.menu .item').tab({
     cache: false,
     alwaysRefresh: true,
     history: true,
