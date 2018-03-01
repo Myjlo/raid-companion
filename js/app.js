@@ -10,9 +10,9 @@ $(document).ready(function(){
 function Tabcontent() {
   $('.menu .item').tab({
     history: true,
-    cache: false,
+    cache: true,
     historyType: 'hash',
-    alwaysRefresh: true,
+    cachetype: 'html',
     apiSettings: {
       loadingDuration : 1000,
       url: 'modules/{$tab}.html'
