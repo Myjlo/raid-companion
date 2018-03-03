@@ -97,56 +97,34 @@ h6.ui.header {
 /* ======================== */
 /* Profession Text Styling  */
 /* ======================== */
+.text-Warrior, a.text-Warrior, a.text-Warrior:hover {color: #FFD166;}
+a.text-Warrior:before {background-color: #FFD166;}
 
+.text-Guardian, a.text-Guardian, a.text-Guardian:hover {color: #58bddc;}
+a.text-Guardian:before, {background-color: #58bddc;}
 
-.text-Warrior, .text-Berserker, .text-Spellbreaker,
-a.text-Warrior, a.text-Berserker, a.text-Spellbreaker,
-a.text-Warrior:hover, a.text-Berserker:hover, a.text-Spellbreaker:hover {color: #FFD166;}
-a.text-Warrior:before, a.text-Berserker:before, a.text-Spellbreaker:before {background-color: #FFD166;}
+.text-Revenant, a.text-Revenant, a.text-Revenant:hover {color: #d8543a;}
+a.text-Revenant:before {background-color: #d8543a;}
 
-.text-Guardian, .text-Dragonhunter, .text-Firebrand,
-a.text-Guardian, a.text-Dragonhunter, a.text-Firebrand,
-a.text-Guardian:hover, a.text-Dragonhunter:hover, a.text-Firebrand:hover {color: #58bddc;}
-a.text-Guardian:before, a.text-Dragonhunter:before, a.text-Firebrand:before {background-color: #58bddc;}
+.text-Ranger, a.text-Ranger, a.text-Ranger:hover {color: #8bda5b;}
+a.text-Ranger:before {background-color: #8bda5b;}
 
-.text-Revenant, .text-Herald, .text-Renegade,
-a.text-Revenant, a.text-Herald, a.text-Renegade,
-a.text-Revenant:hover, a.text-Herald:hover, a.text-Renegade:hover {color: #d8543a;}
-a.text-Revenant:before, a.text-Herald:before, a.text-Renegade:before {background-color: #d8543a;}
+.text-Thief, a.text-Thief, a.text-Thief:hover {color: #C08F95;}
+a.text-Thief:before {background-color: #C08F95;}
 
-.text-Ranger, .text-Druid, .text-Soulbeast,
-a.text-Ranger, a.text-Druid, a.text-Soulbeast,
-a.text-Ranger:hover, a.text-Druid:hover, a.text-Soulbeast:hover {color: #8bda5b;}
-a.text-Ranger:before, a.text-Druid:before, a.text-Soulbeast:before {background-color: #8bda5b;}
-
-.text-Thief, .text-Daredevil, .text-Deadeye,
-a.text-Thief, a.text-Daredevil, a.text-Deadeye,
-a.text-Thief:hover, a.text-Daredevil:hover, a.text-Deadeye:hover {color: #C08F95;}
-a.text-Thief:before, a.text-Daredevil:before, a.text-Deadeye:before {background-color: #C08F95;}
-
-.text-Engineer, .text-Scrapper, .text-Holosmith,
-a.text-Engineer, a.text-Scrapper, a.text-Holosmith,
-a.text-Engineer:hover, a.text-Scrapper:hover, a.text-Holosmith:hover {color: #a86931;}
+.text-Engineer, a.text-Engineer, a.text-Engineer:hover {color: #a86931;}
 a.text-Engineer:before, a.text-Scrapper:before, a.text-Holosmith:before {background-color: #a86931;}
 
-.text-Elementalist, .text-Tempest, .text-Weaver,
-a.text-Elementalist, a.text-Tempest, a.text-Weaver,
-a.text-Elementalist:hover, a.text-Tempest:hover, a.text-Weaver:hover {color: #F68A87;}
-a.text-Elementalist:before, a.text-Tempest:before, a.text-Weaver:before {background-color: #F68A87;}
+.text-Elementalist,a.text-Elementalist, a.text-Elementalist:hover {color: #F68A87;}
+a.text-Elementalist:before {background-color: #F68A87;}
 
-.text-Mesmer, .text-Chronomancer, .text-Mirage,
-a.text-Mesmer, a.text-Chronomancer, a.text-Mirage,
-a.text-Mesmer:hover, a.text-Chronomancer:hover, a.text-Mirage:hover {color: #B679D5;}
-a.text-Mesmer:before, a.text-Chronomancer:before, a.text-Mirage:before {background-color: #B679D5;}
+.text-Mesmer, a.text-Mesmer, a.text-Mesmer:hover {color: #B679D5;}
+a.text-Mesmer:before {background-color: #B679D5;}
 
-.text-Necromancer, .text-Reaper, .text-Scourge,
-a.text-Necromancer, a.text-Reaper, a.text-Scourge, 
-a.text-Necromancer:hover, a.text-Reaper:hover, a.text-Scourge:hover {color: #41a664;}
-a.text-Necromancer:before, a.text-Reaper:before, a.text-Scourge:before {background-color: #41a664;}
+.text-Necromancer, a.text-Necromancer, a.text-Necromancer:hover {color: #41a664;}
+a.text-Necromancer:before {background-color: #41a664;}
 
-.text-Any,
-a.text-Any, 
-a.text-Any:hover {color: #ddd;}
+.text-Any, a.text-Any, a.text-Any:hover {color: #ddd;}
 a.text-Any:before {background-color: #ddd;}
 
 
@@ -182,16 +160,16 @@ a.text-Any:before {background-color: #ddd;}
 	color: #aaa;
 }
 
-.skill-recharge {
+.skill-recharge, .trait-recharge{
   float: right;
   font-size: 12px;
   color: #aaa;
 }
-.skill-description{
-  font-size: 14px;
+.skill-description, .trait-description {
+  font-size: 12px;
   color: #ddd;
 }
-.skill-stats {
+.skill-stats, .trait-stats{
   width: 100%;
   font-size: 12px;
   color: #aaa;
@@ -204,18 +182,27 @@ a.text-Any:before {background-color: #ddd;}
   margin-right: 2px;
   color: #fff;
 }
-.hit-count {
+.hit-count, .finisher-chance {
   color: #777;
 }
 /* ======================== */
-/* Image Styling             */
+/* Image Styling            */
 /* ======================== */
-.image-effect, .image-profession, .image-role, .image-skill {
+.image-effect, .image-profession, .image-role {
 	width: 20px;
 	height: 20px;
 	vertical-align: middle;
 }
-.image-skillrecharge {
+
+.image-skill, .image-trait {
+  width: 20px;
+  height: 20px;
+  outline: 2px #000 solid;
+  background: #000;
+  outline-offset: -2px;
+}
+
+.image-skillrecharge, .image-traitrecharge {
   width: 16px;
   height: 16px;
   vertical-align: middle;
